@@ -9,6 +9,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Added
 
+-   ts-node vscode settings
 -   `tsconfig.json` file
 -   `CHANGELOG.md` file
 -   prettier config files

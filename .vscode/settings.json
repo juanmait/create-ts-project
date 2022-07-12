@@ -1,0 +1,7 @@
+{
+  "code-runner.executorMap": {
+
+    // "typescript": "npx --no-install ts-node-esm $file",
+    "typescript": "NODE_OPTIONS='--experimental-specifier-resolution=node --enable-source-maps' node --experimental-specifier-resolution=node --enable-source-maps --loader ts-paths-esm-loader $file"
+  }
+}
