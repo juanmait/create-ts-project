@@ -1,5 +1,16 @@
 # README
 
+## Npm scripts
+
+```bash
+# Check for typescript errors
+pnpm run check
+# lint the code using eslint
+pnpm run lint
+# format the code using prettier
+pnpm run format
+```
+
 ## Run a ts file
 
 ```bash

@@ -5,6 +5,7 @@
     "main": "index.js",
     "type": "module",
     "scripts": {
+        "check": "npx --no-install tsc --noEmit",
         "format": "npx prettier --write .",
         "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
         "test": "echo \"Error: no test specified\" && exit 1"

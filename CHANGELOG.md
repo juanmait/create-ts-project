@@ -9,6 +9,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Added
 
+-   add npm script `check`
 -   support inline source maps
 
 ### Fixed
