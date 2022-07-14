@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@cubostuff/eslint-config-ts': ^0.0.4
+  '@cubostuff/eslint-config-ts': ^0.0.5
   '@types/eslint': ^8.4.5
   '@types/node': ^18.0.3
   '@typescript-eslint/eslint-plugin': ^5.30.6
@@ -17,7 +17,7 @@ specifiers:
   typescript: ^4.7.4
 
 devDependencies:
-  '@cubostuff/eslint-config-ts': 0.0.4_nulaauzwiviy3rkfwmweuqtdr4
+  '@cubostuff/eslint-config-ts': 0.0.5_nulaauzwiviy3rkfwmweuqtdr4
   '@types/eslint': 8.4.5
   '@types/node': 18.0.3
   '@typescript-eslint/eslint-plugin': 5.30.6_2vt5mtrqleafs33qg2bhpmbaqm
@@ -41,8 +41,8 @@ packages:
       '@jridgewell/trace-mapping': 0.3.9
     dev: true
 
-  /@cubostuff/eslint-config-ts/0.0.4_nulaauzwiviy3rkfwmweuqtdr4:
-    resolution: {integrity: sha512-xjeFh36bhAryZJHyM7jwDfGNpIQKJ71pdj4owTt0fXR130jXWZkKfPoIXy1ZacNYoXkP/3D6C4g/iqG71ia+ag==}
+  /@cubostuff/eslint-config-ts/0.0.5_nulaauzwiviy3rkfwmweuqtdr4:
+    resolution: {integrity: sha512-eWa02GOF0B4T0SWs8Ior/59BXED9l/bBRWwweMZAlLnrTA919oOYPU9N0Bs9yUAcqV9OKzzyVsSeBX9aknIuIg==}
     peerDependencies:
       '@types/eslint': '=>8.4.1 < 9'
       '@typescript-eslint/eslint-plugin': '=>5.9.0 < 6'

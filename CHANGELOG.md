@@ -9,6 +9,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Added
 
+-   upgrade @cubostuff/eslint-config-ts
 -   add ts node resolution `node`
 -   add npm script `check`
 -   support inline source maps
