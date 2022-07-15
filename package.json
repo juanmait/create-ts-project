@@ -1,6 +1,6 @@
 {
     "name": "create-start",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "description": "project templates",
     "main": "index.js",
     "type": "module",
