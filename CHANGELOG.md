@@ -7,8 +7,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0,1.0] - 2022-07-15
+
 ### Added
 
+-   jest support
 -   upgrade @cubostuff/eslint-config-ts
 -   add ts node resolution `node`
 -   add npm script `check`

@@ -1,3 +1,3 @@
-export function sayHello() {
-    console.info('Hello there!');
+export function getGreet(name: string) {
+    return `Hello ${name}!`;
 }

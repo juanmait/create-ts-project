@@ -1,3 +1,3 @@
-import { sayHello } from './lib';
+import { getGreet } from './lib';
 
-sayHello();
+console.info(getGreet('Juan'));
