@@ -7,6 +7,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [0.1.1] - 2022-07-29
 
+-   update package description
 -   rename to `"@cubostuff/create-ts-project"`
 -   support typescript target es2020 (allows BigInt)
 
