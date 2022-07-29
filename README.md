@@ -11,6 +11,10 @@ pnpm run lint
 pnpm run format
 # run tests using jest
 pnpm run test
+
+# run tests using jest in watch mode
+pnpm run test --watch
+pnpm test -- --watch
 ```
 
 ## Run a ts file
@@ -28,9 +32,11 @@ Make sure to check this links:
 -   https://keepachangelog.com
 -   https://semver.org
 
+### Example
+
 ```bash
-npm version minor
 # options (major, minor, or patch)
+npm version minor
 # - increments the version your package.json based on the type of the change
 # - commits this version bump
 # - creates a tag for the current release
