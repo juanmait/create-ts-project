@@ -1,5 +1,5 @@
 {
-    "name": "create-start",
+    "name": "@cubostuff/create-ts-project",
     "version": "0.1.0",
     "description": "project templates",
     "main": "index.js",
