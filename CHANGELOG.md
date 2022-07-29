@@ -7,6 +7,18 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [0.1.1] - 2022-07-29
 
+### Added
+
+-   upgrade dependencies
+    ```
+    @types/jest                       ^28.1.5  →  ^28.1.6
+    @types/node                       ^18.0.3  →  ^18.6.2
+    @typescript-eslint/eslint-plugin  ^5.30.6  →  ^5.31.0
+    @typescript-eslint/parser         ^5.30.6  →  ^5.31.0
+    eslint                            ^8.19.0  →  ^8.20.0
+    ts-jest                           ^28.0.6  →  ^28.0.7
+    ts-node                           ^10.8.2  →  ^10.9.1
+    ```
 -   update package description
 -   rename to `"@cubostuff/create-ts-project"`
 -   support typescript target es2020 (allows BigInt)
