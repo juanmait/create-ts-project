@@ -11,6 +11,11 @@ pnpm run lint
 pnpm run format
 # run tests using jest
 pnpm run test
+# build the project
+pnpm run build
+
+# run all
+pnpm run check && pnpm run lint && pnpm run format && pnpm run test && pnpm run build
 
 # run tests using jest in watch mode
 pnpm run test --watch
