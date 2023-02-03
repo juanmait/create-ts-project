@@ -1,6 +1,12 @@
 # README
 
-## Npm scripts
+## Install
+
+```bash
+pnpm install
+```
+
+## Pnpm scripts
 
 ```bash
 # Check for typescript errors
@@ -25,7 +31,7 @@ pnpm test -- --watch
 ## Run a ts file
 
 ```bash
-# Run a typescript file with source mas support:
+# Run a typescript file with source map support:
 node --experimental-specifier-resolution=node --enable-source-maps --loader ts-paths-esm-loader <file-path>
 ```
 
