@@ -10,6 +10,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Added
 
 -   install instructions in README
+-   vscode debug instructions in README
 
 ## [0.3.0] - 2022-09-19
 

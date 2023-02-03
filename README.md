@@ -35,6 +35,11 @@ pnpm test -- --watch
 node --experimental-specifier-resolution=node --enable-source-maps --loader ts-paths-esm-loader <file-path>
 ```
 
+## Debug a ts file in VSCode
+
+Just run the same command above in a
+[Javascript Debug Terminal](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_javascript-debug-terminal)
+
 ## Release
 
 Make sure to check this links:
