@@ -5,12 +5,44 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [Unreleased] (1.0.0-beta.1?)
+
+### Removed
+
+-   drop support for node `12` and `16`
+-   drop support for jest `28`
 
 ### Added
 
+-   support typescript v4.9
 -   install instructions in README
 -   vscode debug instructions in README
+
+### Changed
+
+-   Upgraded typescript from v4.7.4 to v4.9.5
+-   Upgraded [jest from `v28` to `v29`](https://jestjs.io/docs/upgrading-to-jest29)
+-   Upgraded
+    [ts-jest from `v28` to `v29`](https://github.com/kulshekhar/ts-jest/blob/main/CHANGELOG.md#2900-2022-09-08)
+-   all upgrades:
+    ```
+    @jest/types                       ^28.1.3  →   ^29.4.2
+    @types/eslint                      ^8.4.5  →   ^8.21.0
+    @types/jest                       ^28.1.6  →   ^29.4.0
+    @types/node                       ^18.6.2  →  ^18.13.0
+    @typescript-eslint/eslint-plugin  ^5.31.0  →   ^5.51.0
+    @typescript-eslint/parser         ^5.31.0  →   ^5.51.0
+    eslint                            ^8.20.0  →   ^8.33.0
+    eslint-config-prettier             ^8.5.0  →    ^8.6.0
+    eslint-plugin-import              ^2.26.0  →   ^2.27.5
+    eslint-plugin-jest                ^26.6.0  →   ^27.2.1
+    jest                              ^28.1.3  →   ^29.4.2
+    prettier                           ^2.7.1  →    ^2.8.4
+    ts-jest                           ^28.0.7  →   ^29.0.5
+    ts-paths-esm-loader                ^1.3.1  →    ^1.4.1
+    tsconfig-paths                     ^4.0.0  →    ^4.1.2
+    typescript                         ^4.7.4  →    ^4.9.5
+    ```
 
 ## [0.3.0] - 2022-09-19
 
