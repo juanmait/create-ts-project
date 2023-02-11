@@ -1,7 +1,7 @@
-import { getGreet } from './lib';
+import { getGreet } from './lib.js';
 
 describe('getGreet', () => {
     it('should greet', () => {
-        expect(getGreet('Juan')).toBe('Hello Juan!');
+        expect(getGreet()).toBe('Hello!');
     });
 });

@@ -1,3 +1,3 @@
-import { getGreet } from './lib';
+import { getGreet } from './lib.js';
 
-console.info(getGreet('Juan'));
+console.info(getGreet());

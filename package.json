@@ -5,11 +5,13 @@
     "main": "build/index.js",
     "type": "module",
     "scripts": {
+        "hello": "node build/index.js",
+        "hello:dev": "ts-node --esm src/index.ts",
         "build": "rm -rf build && npx --no-install tsc",
         "check": "npx --no-install tsc --noEmit",
         "format": "npx prettier --write .",
         "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-        "test": "jest"
+        "test": "NODE_OPTIONS=--experimental-vm-modules jest"
     },
     "keywords": [],
     "author": "",

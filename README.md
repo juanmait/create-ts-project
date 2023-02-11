@@ -32,7 +32,7 @@ pnpm test -- --watch
 
 ```bash
 # Run a typescript file with source map support:
-node --experimental-specifier-resolution=node --enable-source-maps --loader ts-paths-esm-loader <file-path>
+npx ts-node --esm src/index.ts
 ```
 
 ## Debug a ts file in VSCode
