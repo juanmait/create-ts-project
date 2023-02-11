@@ -5,26 +5,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased] (1.0.0-beta.1?)
+## [Unreleased]
+
+### Added
+
+-   support typescript
+    [v4.9](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-9.html)
+-   support jest [v29.4](https://github.com/facebook/jest/blob/main/CHANGELOG.md#2942)
+-   support ts-jest
+    [v29](https://github.com/kulshekhar/ts-jest/blob/main/CHANGELOG.md#2905-2023-01-13)
 
 ### Removed
 
 -   drop support for node `12` and `16`
 -   drop support for jest `28`
 
-### Added
-
--   support typescript v4.9
--   install instructions in README
--   vscode debug instructions in README
-
 ### Changed
 
--   Upgraded typescript from v4.7.4 to v4.9.5
--   Upgraded [jest from `v28` to `v29`](https://jestjs.io/docs/upgrading-to-jest29)
--   Upgraded
-    [ts-jest from `v28` to `v29`](https://github.com/kulshekhar/ts-jest/blob/main/CHANGELOG.md#2900-2022-09-08)
--   all upgrades:
+-   upgrade dependencies:
     ```
     @jest/types                       ^28.1.3  →   ^29.4.2
     @types/eslint                      ^8.4.5  →   ^8.21.0
