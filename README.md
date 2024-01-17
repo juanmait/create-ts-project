@@ -70,7 +70,7 @@ git commit -m "describe your latest changes"
 # - set the version in your package.json
 # - commit this version bump
 # - creates a tag for the new version
-npm version 1.0.0.beta.1
+npm version 1.0.0-beta.1
 # options (major, minor, or patch)
 
 # update remote
