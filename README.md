@@ -71,8 +71,7 @@ git commit -m "describe your latest changes"
 # - commit this version bump
 # - creates a tag for the new version
 npm version 1.0.0-beta.1
-# options (major, minor, or patch)
 
 # update remote
-git push && git push --tags
+git push -u origin 1.0.0-beta.1
 ```
