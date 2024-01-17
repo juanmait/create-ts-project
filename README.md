@@ -63,14 +63,14 @@ git push && git push --tags
 ### Example beta
 
 ```bash
-git checkout -b v1.0.0.beta.1
+git checkout -b "1.0.0-beta.1"
 git add .
 git commit -m "describe your latest changes"
 
 # - set the version in your package.json
 # - commit this version bump
 # - creates a tag for the new version
-npm version v1.0.0.beta.1
+npm version 1.0.0.beta.1
 # options (major, minor, or patch)
 
 # update remote
