@@ -55,6 +55,24 @@ Make sure to check this links:
 npm version minor
 # - increments the version your package.json based on the type of the change
 # - commits this version bump
-# - creates a tag for the current release
+# - creates a tag for the current version
+
+git push && git push --tags
+```
+
+### Example beta
+
+```bash
+git checkout -b v1.0.0.beta.1
+git add .
+git commit -m "describe your latest changes"
+
+# - set the version in your package.json
+# - commit this version bump
+# - creates a tag for the new version
+npm version v1.0.0.beta.1
+# options (major, minor, or patch)
+
+# update remote
 git push && git push --tags
 ```

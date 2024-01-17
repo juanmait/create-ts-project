@@ -9,6 +9,27 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Added
 
+-   upgrade dependencies
+    ```
+    @cubostuff/eslint-config-ts        ^0.1.0  →   ^1.0.0-beta.3
+    @jest/types                       ^28.1.3  →   ^29.6.3
+    @types/eslint                      ^8.4.5  →   ^8.56.2
+    @types/jest                       ^28.1.6  →  ^29.5.11
+    @types/node                       ^18.6.2  →  ^20.11.5
+    @typescript-eslint/eslint-plugin  ^5.31.0  →   ^6.19.0
+    @typescript-eslint/parser         ^5.31.0  →   ^6.19.0
+    eslint                            ^8.20.0  →   ^8.56.0
+    eslint-config-prettier             ^8.5.0  →    ^9.1.0
+    eslint-plugin-import              ^2.26.0  →   ^2.29.1
+    eslint-plugin-jest                ^26.6.0  →   ^27.6.3
+    jest                              ^28.1.3  →   ^29.7.0
+    prettier                           ^2.7.1  →    ^3.2.4
+    ts-jest                           ^28.0.7  →   ^29.1.1
+    ts-node                           ^10.9.1  →   ^10.9.2
+    ts-paths-esm-loader                ^1.3.1  →    ^1.4.3
+    tsconfig-paths                     ^4.0.0  →    ^4.2.0
+    typescript                         ^4.7.4  →    ^5.3.3
+    ```
 -   install instructions in README
 -   vscode debug instructions in README
 
