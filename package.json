@@ -1,6 +1,6 @@
 {
     "name": "@cubostuff/create-ts-project",
-    "version": "0.3.0",
+    "version": "1.0.0-beta.1",
     "description": "Boilerplate code to start a typescript project for nodejs",
     "main": "build/index.js",
     "type": "module",
