@@ -28,17 +28,16 @@ pnpm run test --watch
 pnpm test -- --watch
 ```
 
-## Run a ts file
+## Example run a typescript file:
 
 ```bash
-# Run a typescript file with source map support:
-node --experimental-specifier-resolution=node --enable-source-maps --loader ts-paths-esm-loader <file-path>
+# Run a typescript file with source maps support:
+node --experimental-specifier-resolution=node --enable-source-maps --loader ts-paths-esm-loader src/index.ts
 ```
 
-## Debug a ts file in VSCode
+## Debug a typescript file in VSCode
 
-Just run the same command above in a
-[Javascript Debug Terminal](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_javascript-debug-terminal)
+Just run the same command above in a vscode [Javascript Debug Terminal]
 
 ## Release
 
@@ -75,3 +74,6 @@ npm version 1.0.0-beta.3
 # update remote
 git push -u origin 1.0.0-beta.3
 ```
+
+[Javascript Debug Terminal]:
+    https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_javascript-debug-terminal

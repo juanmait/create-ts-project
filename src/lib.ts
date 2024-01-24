@@ -1,3 +1,3 @@
-export function getGreet(name: string) {
-    return `Hello ${name}!`;
+export function getGreetingsFor(name: string) {
+    return `Hola ${name}!`;
 }

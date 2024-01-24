@@ -1,3 +1,3 @@
-import { getGreet } from './lib';
+import { getGreetingsFor } from './lib';
 
-console.info(getGreet('Juan'));
+console.info(getGreetingsFor('Juan'));
