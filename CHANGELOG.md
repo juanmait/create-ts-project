@@ -7,6 +7,26 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [1.0.0] - 2024-09-13
+
+### Changed
+
+-   upgrade dependencies
+    ```
+    @cubostuff/eslint-config-ts       ^1.0.0-beta.3  →    ^1.0.1
+    @types/eslint                           ^8.56.2  →  ^8.56.12
+    @types/jest                            ^29.5.11  →  ^29.5.13
+    @types/node                            ^20.11.5  →   ^22.5.4
+    @typescript-eslint/eslint-plugin        ^6.19.0  →    ^8.5.0
+    @typescript-eslint/parser               ^6.19.0  →    ^8.5.0
+    eslint                                  ^8.56.0  →   ^8.57.0
+    eslint-plugin-import                    ^2.29.1  →   ^2.30.0
+    eslint-plugin-jest                      ^27.6.3  →   ^28.8.3
+    prettier                                 ^3.2.4  →    ^3.3.3
+    ts-jest                                 ^29.1.1  →   ^29.2.5
+    typescript                               ^5.3.3  →    ^5.6.2
+    ```
+
 ### Added
 
 -   upgrade dependencies
