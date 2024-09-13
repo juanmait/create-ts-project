@@ -9,6 +9,10 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [1.0.0] - 2024-09-13
 
+### Fix
+
+-   fix deprecated type `InitialOptionsTsJest` in `jest.config.cjs`
+
 ### Changed
 
 -   upgrade dependencies
