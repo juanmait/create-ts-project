@@ -43,9 +43,9 @@ Just run the same command above in a vscode [Javascript Debug Terminal]
 
 Make sure to check this links:
 
--   https://www.conventionalcommits.org
--   https://keepachangelog.com
--   https://semver.org
+- https://www.conventionalcommits.org
+- https://keepachangelog.com
+- https://semver.org
 
 ### Example
 
