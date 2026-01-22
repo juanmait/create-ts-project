@@ -7,15 +7,21 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+- fixed example test at `src/lib.test.ts`
+
+## [1.1.0] - 2024-09-13
+
+???
+
 ## [1.0.0] - 2024-09-13
 
 ### Fix
 
--   fix deprecated type `InitialOptionsTsJest` in `jest.config.cjs`
+- fix deprecated type `InitialOptionsTsJest` in `jest.config.cjs`
 
 ### Changed
 
--   upgrade dependencies
+- upgrade dependencies
     ```
     @cubostuff/eslint-config-ts       ^1.0.0-beta.3  →    ^1.0.1
     @types/eslint                           ^8.56.2  →  ^8.56.12
@@ -33,7 +39,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Added
 
--   upgrade dependencies
+- upgrade dependencies
     ```
     @cubostuff/eslint-config-ts        ^0.1.0  →   ^1.0.0-beta.3
     @jest/types                       ^28.1.3  →   ^29.6.3
@@ -54,34 +60,34 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
     tsconfig-paths                     ^4.0.0  →    ^4.2.0
     typescript                         ^4.7.4  →    ^5.3.3
     ```
--   install instructions in README
--   vscode debug instructions in README
+- install instructions in README
+- vscode debug instructions in README
 
 ## [0.3.0] - 2022-09-19
 
 ## Added
 
--   support typescript `resolveJsonModule`
+- support typescript `resolveJsonModule`
 
 ## [0.2.1] - 2022-09-04
 
 ### Fixed
 
--   prettier ignore build folder
--   exclude build folder from tests
+- prettier ignore build folder
+- exclude build folder from tests
 
 ## [0.2.0] - 2022-08-19
 
 ## Added
 
--   Emit type declarations
--   Add package `build` script
+- Emit type declarations
+- Add package `build` script
 
 ## [0.1.1] - 2022-07-29
 
 ### Added
 
--   upgrade dependencies
+- upgrade dependencies
     ```
     @types/jest                       ^28.1.5  →  ^28.1.6
     @types/node                       ^18.0.3  →  ^18.6.2
@@ -91,35 +97,35 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
     ts-jest                           ^28.0.6  →  ^28.0.7
     ts-node                           ^10.8.2  →  ^10.9.1
     ```
--   update package description
--   rename to `"@cubostuff/create-ts-project"`
--   support typescript target es2020 (allows BigInt)
+- update package description
+- rename to `"@cubostuff/create-ts-project"`
+- support typescript target es2020 (allows BigInt)
 
 ## [0.1.0] - 2022-07-15
 
 ### Added
 
--   jest support
--   upgrade @cubostuff/eslint-config-ts
--   add ts node resolution `node`
--   add npm script `check`
--   support inline source maps
+- jest support
+- upgrade @cubostuff/eslint-config-ts
+- add ts node resolution `node`
+- add npm script `check`
+- support inline source maps
 
 ### Fixed
 
--   ignore pnpm warn UNMEET PEER DEPENDENCIES
+- ignore pnpm warn UNMEET PEER DEPENDENCIES
 
 ## [0.0.2] - 2022-07-12
 
 ### Added
 
--   eslint config
--   ts-node vscode settings
--   `tsconfig.json` file
--   `CHANGELOG.md` file
--   prettier config files
--   package scripts `format` & `lint`
--   upgrade dependencies
+- eslint config
+- ts-node vscode settings
+- `tsconfig.json` file
+- `CHANGELOG.md` file
+- prettier config files
+- package scripts `format` & `lint`
+- upgrade dependencies
     ```
     @cubostuff/eslint-config-ts        ^0.0.3  →   ^0.0.4
     @types/eslint                      ^8.4.2  →   ^8.4.5
