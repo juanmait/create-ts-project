@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FILES="CLAUDE.md docs/"
+FILES="CLAUDE.md docs/ claude.sh"
 
 if [ "$1" = "down" ]; then
     # Remove files
