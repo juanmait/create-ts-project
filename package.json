@@ -7,9 +7,10 @@
     "scripts": {
         "dev": "pnpm run tsfile src/index.ts",
         "tsfile": "tsx",
-        "build": "rm -rf build && npx --no-install tsc",
-        "check": "npx --no-install tsc --noEmit",
-        "format": "npx prettier --write .",
+        "build": "rm -rf build && tsc",
+        "check": "tsc --noEmit",
+        "format": "pnpm run formatfile .",
+        "formatfile": "prettier --write",
         "lint": "eslint .",
         "test": "jest"
     },

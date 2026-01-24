@@ -1,6 +1,7 @@
 # Filtering TypeScript Errors
 
-When running `tsc` on the entire codebase, you often get hundreds of errors. This guide shows how to filter the output to focus on specific files or directories.
+When running `tsc` on the entire codebase, you often get hundreds of errors. This guide shows how to
+filter the output to focus on specific files or directories.
 
 ## Basic Approach
 
@@ -79,6 +80,7 @@ pnpm run typecheck 2>&1 | grep "src/leads-pipeline/" | grep "error TS" | cut -d:
 ```
 
 Output example:
+
 ```
 src/leads-pipeline/types.ts:45:3
 src/leads-pipeline/LeadPipeline.ts:37:25
@@ -93,6 +95,7 @@ pnpm run typecheck 2>&1 | grep "src/leads-pipeline/" | grep "error TS" | cut -d:
 ```
 
 Output example:
+
 ```
    5 src/leads-pipeline/types.ts
    2 src/leads-pipeline/LeadPipeline.ts

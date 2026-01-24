@@ -12,12 +12,14 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Add `tsx` package for running TypeScript files directly without compilation
 - Add `dev` script for running `src/index.ts` with tsx
 - Add `tsfile` script as a wrapper for tsx to run any TypeScript file
+- Add `formatfile` script for formatting individual files with Prettier
 
 ### Changed
 
 - Migrate from ESLint legacy config (`.eslintrc.cjs`) to flat config format (`eslint.config.js`)
 - Update lint script to use simplified command (removed explicit file extensions)
-- Replace `--experimental-loader` with `tsx` for running TypeScript files (fixes Node.js deprecation warning)
+- Replace `--experimental-loader` with `tsx` for running TypeScript files (fixes Node.js deprecation
+  warning)
 - Upgrade dependencies:
     ```
     @jest/types                       ^29.6.3  →   ^30.2.0

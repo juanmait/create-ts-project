@@ -1,10 +1,12 @@
 # Working with Multiple Git Stashes
 
-This guide explains how to manage multiple named stashes in Git, allowing you to maintain different sets of changes (like configuration A, configuration B, etc.) and switch between them.
+This guide explains how to manage multiple named stashes in Git, allowing you to maintain different
+sets of changes (like configuration A, configuration B, etc.) and switch between them.
 
 ## Overview
 
-Git stash supports multiple stashes with descriptive names. You can save, list, apply, and manage specific stashes by their index or name.
+Git stash supports multiple stashes with descriptive names. You can save, list, apply, and manage
+specific stashes by their index or name.
 
 ---
 
@@ -20,6 +22,7 @@ git stash push -S -m "experimental-refactor"
 ```
 
 **Flags:**
+
 - `-S` or `--staged`: Only stash staged changes (keeps unstaged changes in working directory)
 - `-m "message"`: Add a descriptive message to identify this stash later
 
@@ -34,6 +37,7 @@ git stash list
 ```
 
 **Output example:**
+
 ```
 stash@{0}: On main: experimental-refactor
 stash@{1}: On main: temporary-debug-code
@@ -59,6 +63,7 @@ git stash apply
 ```
 
 **Benefits:**
+
 - Keeps the stash in your stash list
 - Allows reusing the same stash multiple times
 - Safer than `pop` if you're experimenting
@@ -106,7 +111,8 @@ Remove a stash you no longer need:
 git stash drop stash@{1}
 ```
 
-**Important:** Dropped stashes are difficult to recover. Make sure you don't need them before dropping.
+**Important:** Dropped stashes are difficult to recover. Make sure you don't need them before
+dropping.
 
 ### Clear All Stashes
 
@@ -127,6 +133,7 @@ git stash branch my-feature-branch stash@{1}
 ```
 
 This command:
+
 1. Creates a new branch named `my-feature-branch`
 2. Checks out that branch
 3. Applies the stash
@@ -138,7 +145,9 @@ This command:
 
 ### The Problem with Duplicate Names
 
-**Important:** Stash names are NOT unique identifiers. When you run `git stash push -m "same-name"`, Git does NOT override an existing stash with that name. Instead, it creates a NEW stash with the same name, resulting in duplicates:
+**Important:** Stash names are NOT unique identifiers. When you run `git stash push -m "same-name"`,
+Git does NOT override an existing stash with that name. Instead, it creates a NEW stash with the
+same name, resulting in duplicates:
 
 ```bash
 git stash list
@@ -182,7 +191,8 @@ git stash push -S -m "config-A-local-settings"
 git stash list
 ```
 
-**Critical Order:** You must drop the old stash BEFORE creating the new one. If you create the new stash first, the indices shift and you might drop the wrong stash.
+**Critical Order:** You must drop the old stash BEFORE creating the new one. If you create the new
+stash first, the indices shift and you might drop the wrong stash.
 
 ### Version Your Stashes (Alternative Approach)
 
@@ -201,6 +211,7 @@ git stash drop stash@{2}  # Drop v1
 ```
 
 **Benefits:**
+
 - Keep history of different iterations
 - Can compare different versions
 - No risk of losing work if you make a mistake
@@ -277,6 +288,7 @@ update-stash() {
 ```
 
 **Usage:**
+
 ```bash
 # Apply stash 0, make edits, then:
 update-stash 0
@@ -317,6 +329,7 @@ git stash list
 ```
 
 Output:
+
 ```
 stash@{0}: On main: config-B-debug-mode
 stash@{1}: On main: config-A-local-settings
@@ -376,6 +389,7 @@ git stash list | grep "SMP-3672"
 ### 3. Prefer `apply` Over `pop`
 
 Use `apply` instead of `pop` to keep stashes around:
+
 - Safer for experimentation
 - Allows reuse of the same configuration
 - Can always `drop` manually later if not needed
@@ -383,6 +397,7 @@ Use `apply` instead of `pop` to keep stashes around:
 ### 4. Stash Indices Change
 
 Remember that stash indices shift when you drop or pop stashes:
+
 - `stash@{2}` becomes `stash@{1}` after dropping `stash@{0}`
 - Always check `git stash list` before applying by index
 
@@ -395,6 +410,7 @@ git stash push -u -m "includes-untracked-files"
 ```
 
 Flags:
+
 - `-u` or `--include-untracked`: Include untracked files in stash
 - `-a` or `--all`: Include untracked AND ignored files
 
@@ -510,17 +526,17 @@ git stash apply <commit-hash>
 
 ## Summary of Key Commands
 
-| Command | Description |
-|---------|-------------|
-| `git stash push -S -m "name"` | Create named stash of staged changes |
-| `git stash list` | List all stashes |
-| `git stash apply stash@{n}` | Apply specific stash (keeps it) |
-| `git stash pop stash@{n}` | Apply and remove specific stash |
-| `git stash show stash@{n}` | Preview stash contents |
-| `git stash show -p stash@{n}` | Show full diff of stash |
-| `git stash drop stash@{n}` | Delete specific stash |
-| `git stash clear` | Delete all stashes |
-| `git stash branch name stash@{n}` | Create branch from stash |
+| Command                           | Description                          |
+| --------------------------------- | ------------------------------------ |
+| `git stash push -S -m "name"`     | Create named stash of staged changes |
+| `git stash list`                  | List all stashes                     |
+| `git stash apply stash@{n}`       | Apply specific stash (keeps it)      |
+| `git stash pop stash@{n}`         | Apply and remove specific stash      |
+| `git stash show stash@{n}`        | Preview stash contents               |
+| `git stash show -p stash@{n}`     | Show full diff of stash              |
+| `git stash drop stash@{n}`        | Delete specific stash                |
+| `git stash clear`                 | Delete all stashes                   |
+| `git stash branch name stash@{n}` | Create branch from stash             |
 
 ---
 
