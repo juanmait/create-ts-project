@@ -7,10 +7,17 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Added
+
+- Add `tsx` package for running TypeScript files directly without compilation
+- Add `dev` script for running `src/index.ts` with tsx
+- Add `tsfile` script as a wrapper for tsx to run any TypeScript file
+
 ### Changed
 
 - Migrate from ESLint legacy config (`.eslintrc.cjs`) to flat config format (`eslint.config.js`)
 - Update lint script to use simplified command (removed explicit file extensions)
+- Replace `--experimental-loader` with `tsx` for running TypeScript files (fixes Node.js deprecation warning)
 - Upgrade dependencies:
     ```
     @jest/types                       ^29.6.3  →   ^30.2.0
@@ -21,6 +28,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
     eslint-config-prettier             ^9.1.0  →   ^10.1.8
     eslint-plugin-jest                ^28.8.3  →  ^29.12.1
     jest                              ^29.7.0  →   ^30.2.0
+    tsx                                       →   ^4.21.0 (new)
     ```
 
 ### Removed
