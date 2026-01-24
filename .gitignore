@@ -6,3 +6,4 @@ data
 build
 .vscode
 CLAUDE.md
+docs/development
