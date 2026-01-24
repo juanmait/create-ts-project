@@ -7,7 +7,29 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
-- fixed example test at `src/lib.test.ts`
+### Changed
+
+- Migrate from ESLint legacy config (`.eslintrc.cjs`) to flat config format (`eslint.config.js`)
+- Update lint script to use simplified command (removed explicit file extensions)
+- Upgrade dependencies:
+    ```
+    @jest/types                       ^29.6.3  →   ^30.2.0
+    @types/eslint                    ^8.56.12  →    ^9.6.1
+    @types/jest                      ^29.5.13  →   ^30.0.0
+    @types/node                       ^22.5.4  →  ^25.0.10
+    eslint                            ^8.57.0  →   ^9.39.2
+    eslint-config-prettier             ^9.1.0  →   ^10.1.8
+    eslint-plugin-jest                ^28.8.3  →  ^29.12.1
+    jest                              ^29.7.0  →   ^30.2.0
+    ```
+
+### Removed
+
+- Delete `.eslintignore` file (replaced by `ignores` property in flat config)
+
+### Fixed
+
+- Fixed example test at `src/lib.test.ts`
 
 ## [1.1.0] - 2024-09-13
 
