@@ -23,6 +23,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Enable `verbatimModuleSyntax` in TypeScript to enforce `import type` for type-only imports
 - Add ESLint rule `@typescript-eslint/consistent-type-imports` to ensure consistent use of type
   imports
+- Configure Jest to use ESM mode (required for `verbatimModuleSyntax` compatibility)
+- Update README.md with current scripts and features
 - Upgrade dependencies:
     ```
     @jest/types                       ^29.6.3  →   ^30.2.0
