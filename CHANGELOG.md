@@ -20,6 +20,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Update lint script to use simplified command (removed explicit file extensions)
 - Replace `--experimental-loader` with `tsx` for running TypeScript files (fixes Node.js deprecation
   warning)
+- Optimize TypeScript configuration for Node.js environment:
+    - Add `"lib": ["ES2020"]` to exclude DOM types
+    - Add `"types": ["node", "jest"]` to explicitly include only Node.js types
+    - Add `"include": ["src/**/*"]` and `"exclude": ["node_modules", "build"]` patterns
+    - Keep `"module": "ESNext"` and `"moduleResolution": "node"` to avoid requiring file extensions
+      in imports
 - Enable `verbatimModuleSyntax` in TypeScript to enforce `import type` for type-only imports
 - Add ESLint rule `@typescript-eslint/consistent-type-imports` to ensure consistent use of type
   imports
