@@ -20,6 +20,9 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Update lint script to use simplified command (removed explicit file extensions)
 - Replace `--experimental-loader` with `tsx` for running TypeScript files (fixes Node.js deprecation
   warning)
+- Enable `verbatimModuleSyntax` in TypeScript to enforce `import type` for type-only imports
+- Add ESLint rule `@typescript-eslint/consistent-type-imports` to ensure consistent use of type
+  imports
 - Upgrade dependencies:
     ```
     @jest/types                       ^29.6.3  →   ^30.2.0
