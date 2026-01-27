@@ -8,9 +8,4 @@ export default [
         ignores: ['build/**'],
     },
     ...eslintConfigTs,
-    {
-        rules: {
-            '@typescript-eslint/consistent-type-imports': 'error',
-        },
-    },
 ];

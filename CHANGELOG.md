@@ -31,6 +31,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   imports
 - Configure Jest to use ESM mode (required for `verbatimModuleSyntax` compatibility)
 - Update README.md with current scripts and features
+- Replace `eslint-plugin-import` with `eslint-plugin-import-x` and install required peer dependencies
+  for local `@cubostuff/eslint-config-ts` compatibility
 - Upgrade dependencies:
     ```
     @jest/types                       ^29.6.3  →   ^30.2.0
