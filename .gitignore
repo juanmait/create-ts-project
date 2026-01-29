@@ -10,3 +10,4 @@ build
 CLAUDE.md
 docs/development
 claude.sh
+.env
