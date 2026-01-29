@@ -43,6 +43,10 @@ pnpm run check
 # Lint code with ESLint
 pnpm run lint
 
+# Lint specific files
+pnpm run lint src/index.ts
+pnpm run lint "src/**/*.ts"
+
 # Format all files with Prettier
 pnpm run format
 

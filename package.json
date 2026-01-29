@@ -11,7 +11,7 @@
         "check": "tsc --noEmit",
         "format": "pnpm run formatfile .",
         "formatfile": "prettier --write",
-        "lint": "eslint .",
+        "lint": "eslint",
         "test": "NODE_OPTIONS=--experimental-vm-modules jest"
     },
     "keywords": [],
