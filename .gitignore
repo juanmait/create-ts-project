@@ -5,4 +5,8 @@ node_modules
 data
 build
 .vscode
+*.patch
+
 CLAUDE.md
+docs/development
+claude.sh

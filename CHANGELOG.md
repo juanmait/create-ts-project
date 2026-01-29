@@ -7,7 +7,52 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
-- fixed example test at `src/lib.test.ts`
+### Added
+
+- Add `tsx` package for running TypeScript files directly without compilation
+- Add `dev` script for running `src/index.ts` with tsx
+- Add `tsfile` script as a wrapper for tsx to run any TypeScript file
+- Add `formatfile` script for formatting individual files with Prettier
+
+### Changed
+
+- Migrate from ESLint legacy config (`.eslintrc.cjs`) to flat config format (`eslint.config.js`)
+- Update lint script to use simplified command (removed explicit file extensions)
+- Replace `--experimental-loader` with `tsx` for running TypeScript files (fixes Node.js deprecation
+  warning)
+- Optimize TypeScript configuration for Node.js environment:
+    - Add `"lib": ["ES2020"]` to exclude DOM types
+    - Add `"types": ["node", "jest"]` to explicitly include only Node.js types
+    - Add `"include": ["src/**/*"]` and `"exclude": ["node_modules", "build"]` patterns
+    - Keep `"module": "ESNext"` and `"moduleResolution": "node"` to avoid requiring file extensions
+      in imports
+- Enable `verbatimModuleSyntax` in TypeScript to enforce `import type` for type-only imports
+- Add ESLint rule `@typescript-eslint/consistent-type-imports` to ensure consistent use of type
+  imports
+- Configure Jest to use ESM mode (required for `verbatimModuleSyntax` compatibility)
+- Update README.md with current scripts and features
+- Replace `eslint-plugin-import` with `eslint-plugin-import-x` and install required peer dependencies
+  for local `@cubostuff/eslint-config-ts` compatibility
+- Upgrade dependencies:
+    ```
+    @jest/types                       ^29.6.3  →   ^30.2.0
+    @types/eslint                    ^8.56.12  →    ^9.6.1
+    @types/jest                      ^29.5.13  →   ^30.0.0
+    @types/node                       ^22.5.4  →  ^25.0.10
+    eslint                            ^8.57.0  →   ^9.39.2
+    eslint-config-prettier             ^9.1.0  →   ^10.1.8
+    eslint-plugin-jest                ^28.8.3  →  ^29.12.1
+    jest                              ^29.7.0  →   ^30.2.0
+    tsx                                       →   ^4.21.0 (new)
+    ```
+
+### Removed
+
+- Delete `.eslintignore` file (replaced by `ignores` property in flat config)
+
+### Fixed
+
+- Fixed example test at `src/lib.test.ts`
 
 ## [1.1.0] - 2024-09-13
 
